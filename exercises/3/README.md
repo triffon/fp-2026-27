@@ -2,4 +2,5 @@
 
 ## Scheme/Racket
 
-1. [Въведение в Scheme](./Week01-HelloScheme/)
+1. [Въведение в Scheme](./Week01-HelloScheme/) - 06.10.2026
+2. [Рекурсия](./Week02-Recursion/) - 13.10.2026
