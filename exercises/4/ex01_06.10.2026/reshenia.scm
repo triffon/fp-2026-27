@@ -28,6 +28,11 @@
         ((= n 1) 1)
         (else (+ (fact (- n 1)) (fact (- n 2))))))
 
+(define (fib n)
+  (if (< n 2) n
+      (+ (fib (- n 1)) (fib (- n 2))) 
+  ))
+
 (define (sum-interval a b)
   (if (> a b)
       0
