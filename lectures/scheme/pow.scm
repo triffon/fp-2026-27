@@ -1,0 +1,12 @@
+(define (pow x n)
+  (cond ((= n 0) 1)
+        ((< n 0) (/ 1 (pow x (- n))))
+        ((> n 0) (* x (pow x (- n 1))))))
+
+(define (qpow x n)
+  (cond ((= n 0) 1)
+        ((< n 0) (/ 1 (qpow x (- n))))
+        ((= n 2) (* x x))
+        ((even? n) (qpow (qpow x (quotient n 2)) 2))
+;;        ((even? n) (* (qpow x (quotient n 2)) (qpow x (quotient n 2))))
+        (else (* x (qpow x (- n 1))))))
