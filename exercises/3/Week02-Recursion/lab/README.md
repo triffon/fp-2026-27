@@ -227,9 +227,7 @@
 
 Всеки начин попада в точно една от двете групи, затова:
 
-```math
-p(n, k) = \underbrace{p(n - k, k)}_{\text{махаме едно } k} + \underbrace{p(n, k + 1)}_{\text{забраняваме } k}
-```
+$$p(n, k) = \underset{\text{махаме едно } k}{\underbrace{p(n - k, k)}} + \underset{\text{забраняваме } k}{\underbrace{p(n, k + 1)}}$$
 
 Дъна на рекурсията:
 
@@ -244,9 +242,7 @@ p(n, k) = \underbrace{p(n - k, k)}_{\text{махаме едно } k} + \underbra
 
 **Стъпка 1** — най-малкото допустимо събираемо е ${\color{#E5534B}\mathbf{1}}$:
 
-```math
-p(6, {\color{#E5534B}\mathbf{1}}) = p(5, {\color{#E5534B}\mathbf{1}}) + p(6, {\color{#539BF5}\mathbf{2}})
-```
+$$p(6, {\color{#E5534B}\mathbf{1}}) = p(5, {\color{#E5534B}\mathbf{1}}) + p(6, {\color{#539BF5}\mathbf{2}})$$
 
 | ✂️ С поне едно ${\color{#E5534B}\mathbf{1}}$ | → махаме едно ${\color{#E5534B}\mathbf{1}}$ | 🚫 Без ${\color{#E5534B}\mathbf{1}}$ |
 |---|---|---|
@@ -263,9 +259,7 @@ p(6, {\color{#E5534B}\mathbf{1}}) = p(5, {\color{#E5534B}\mathbf{1}}) + p(6, {\c
 
 **Стъпка 2** — най-малкото допустимо събираемо е ${\color{#539BF5}\mathbf{2}}$:
 
-```math
-p(6, {\color{#539BF5}\mathbf{2}}) = p(4, {\color{#539BF5}\mathbf{2}}) + p(6, {\color{#57AB5A}\mathbf{3}})
-```
+$$p(6, {\color{#539BF5}\mathbf{2}}) = p(4, {\color{#539BF5}\mathbf{2}}) + p(6, {\color{#57AB5A}\mathbf{3}})$$
 
 | ✂️ С поне едно ${\color{#539BF5}\mathbf{2}}$ | → махаме едно ${\color{#539BF5}\mathbf{2}}$ | 🚫 Без ${\color{#539BF5}\mathbf{2}}$ |
 |---|---|---|
@@ -275,9 +269,7 @@ p(6, {\color{#539BF5}\mathbf{2}}) = p(4, {\color{#539BF5}\mathbf{2}}) + p(6, {\c
 
 **Стъпка 3** — най-малкото допустимо събираемо е ${\color{#57AB5A}\mathbf{3}}$:
 
-```math
-p(6, {\color{#57AB5A}\mathbf{3}}) = p(3, {\color{#57AB5A}\mathbf{3}}) + p(6, {\color{#E0823D}\mathbf{4}})
-```
+$$p(6, {\color{#57AB5A}\mathbf{3}}) = p(3, {\color{#57AB5A}\mathbf{3}}) + p(6, {\color{#E0823D}\mathbf{4}})$$
 
 | ✂️ С поне едно ${\color{#57AB5A}\mathbf{3}}$ | → махаме едно ${\color{#57AB5A}\mathbf{3}}$ | 🚫 Без ${\color{#57AB5A}\mathbf{3}}$ |
 |---|---|---|
@@ -286,9 +278,7 @@ p(6, {\color{#57AB5A}\mathbf{3}}) = p(3, {\color{#57AB5A}\mathbf{3}}) + p(6, {\c
 
 **Стъпка 4** — най-малкото допустимо събираемо е ${\color{#E0823D}\mathbf{4}}$:
 
-```math
-p(6, {\color{#E0823D}\mathbf{4}}) = p(2, {\color{#E0823D}\mathbf{4}}) + p(6, {\color{#B083F0}\mathbf{5}})
-```
+$$p(6, {\color{#E0823D}\mathbf{4}}) = p(2, {\color{#E0823D}\mathbf{4}}) + p(6, {\color{#B083F0}\mathbf{5}})$$
 
 | ✂️ С поне едно ${\color{#E0823D}\mathbf{4}}$ | → махаме едно ${\color{#E0823D}\mathbf{4}}$ | 🚫 Без ${\color{#E0823D}\mathbf{4}}$ |
 |---|---|---|
@@ -297,9 +287,7 @@ p(6, {\color{#E0823D}\mathbf{4}}) = p(2, {\color{#E0823D}\mathbf{4}}) + p(6, {\c
 
 **Стъпка 5** — най-малкото допустимо събираемо е ${\color{#B083F0}\mathbf{5}}$:
 
-```math
-p(6, {\color{#B083F0}\mathbf{5}}) = p(1, {\color{#B083F0}\mathbf{5}}) + p(6, {\color{#E275AD}\mathbf{6}})
-```
+$$p(6, {\color{#B083F0}\mathbf{5}}) = p(1, {\color{#B083F0}\mathbf{5}}) + p(6, {\color{#E275AD}\mathbf{6}})$$
 
 | ✂️ С поне едно ${\color{#B083F0}\mathbf{5}}$ | → махаме едно ${\color{#B083F0}\mathbf{5}}$ | 🚫 Без ${\color{#B083F0}\mathbf{5}}$ |
 |---|---|---|
@@ -308,9 +296,7 @@ p(6, {\color{#B083F0}\mathbf{5}}) = p(1, {\color{#B083F0}\mathbf{5}}) + p(6, {\c
 
 **Стъпка 6** — най-малкото допустимо събираемо е ${\color{#E275AD}\mathbf{6}}$:
 
-```math
-p(6, {\color{#E275AD}\mathbf{6}}) = p(0, {\color{#E275AD}\mathbf{6}}) + p(6, 7)
-```
+$$p(6, {\color{#E275AD}\mathbf{6}}) = p(0, {\color{#E275AD}\mathbf{6}}) + p(6, 7)$$
 
 | ✂️ С поне едно ${\color{#E275AD}\mathbf{6}}$ | → махаме едно ${\color{#E275AD}\mathbf{6}}$ | 🚫 Без ${\color{#E275AD}\mathbf{6}}$ |
 |---|---|---|
@@ -319,18 +305,16 @@ p(6, {\color{#E275AD}\mathbf{6}}) = p(0, {\color{#E275AD}\mathbf{6}}) + p(6, 7)
 
 Махнахме и последното събираемо — стигнахме дъното $p(0, k) = 1$, т.е. намерихме един начин (самото ${\color{#E275AD}\mathbf{6}}$).
 
-Сега „сглобяваме“ резултата отдолу нагоре:
+Сега „сглобяваме“ резултата отдолу нагоре — всеки ред използва стойността от реда над него:
 
-```math
-\begin{aligned}
-p(6, {\color{#E275AD}\mathbf{6}}) &= p(0, {\color{#E275AD}\mathbf{6}}) + p(6, 7) = 1 + 0 = 1 \\
-p(6, {\color{#B083F0}\mathbf{5}}) &= p(1, {\color{#B083F0}\mathbf{5}}) + p(6, {\color{#E275AD}\mathbf{6}}) = 0 + 1 = 1 \\
-p(6, {\color{#E0823D}\mathbf{4}}) &= p(2, {\color{#E0823D}\mathbf{4}}) + p(6, {\color{#B083F0}\mathbf{5}}) = 0 + 1 = 1 \\
-p(6, {\color{#57AB5A}\mathbf{3}}) &= p(3, {\color{#57AB5A}\mathbf{3}}) + p(6, {\color{#E0823D}\mathbf{4}}) = 1 + 1 = 2 \\
-p(6, {\color{#539BF5}\mathbf{2}}) &= p(4, {\color{#539BF5}\mathbf{2}}) + p(6, {\color{#57AB5A}\mathbf{3}}) = 2 + 2 = 4 \\
-p(6, {\color{#E5534B}\mathbf{1}}) &= p(5, {\color{#E5534B}\mathbf{1}}) + p(6, {\color{#539BF5}\mathbf{2}}) = 7 + 4 = \mathbf{11}
-\end{aligned}
-```
+| | ✂️ махаме | 🚫 забраняваме | Общо |
+|---|---|---|---|
+| $p(6, {\color{#E275AD}\mathbf{6}})$ | $p(0, {\color{#E275AD}\mathbf{6}}) = 1$ | $p(6, 7) = 0$ | $1 + 0 = 1$ |
+| $p(6, {\color{#B083F0}\mathbf{5}})$ | $p(1, {\color{#B083F0}\mathbf{5}}) = 0$ | $p(6, {\color{#E275AD}\mathbf{6}}) = 1$ | $0 + 1 = 1$ |
+| $p(6, {\color{#E0823D}\mathbf{4}})$ | $p(2, {\color{#E0823D}\mathbf{4}}) = 0$ | $p(6, {\color{#B083F0}\mathbf{5}}) = 1$ | $0 + 1 = 1$ |
+| $p(6, {\color{#57AB5A}\mathbf{3}})$ | $p(3, {\color{#57AB5A}\mathbf{3}}) = 1$ | $p(6, {\color{#E0823D}\mathbf{4}}) = 1$ | $1 + 1 = 2$ |
+| $p(6, {\color{#539BF5}\mathbf{2}})$ | $p(4, {\color{#539BF5}\mathbf{2}}) = 2$ | $p(6, {\color{#57AB5A}\mathbf{3}}) = 2$ | $2 + 2 = 4$ |
+| $p(6, {\color{#E5534B}\mathbf{1}})$ | $p(5, {\color{#E5534B}\mathbf{1}}) = 7$ | $p(6, {\color{#539BF5}\mathbf{2}}) = 4$ | $7 + 4 = \mathbf{11}$ |
 
 $p(5, 1)$, $p(4, 2)$ и $p(3, 3)$ не е нужно да ги смятаме на ръка — процедурата ги пресмята рекурсивно по абсолютно същия начин.
 
