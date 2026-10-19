@@ -4,3 +4,4 @@
 
 1. [Въведение в Scheme](./Week01-HelloScheme/) - 06.10.2026
 2. [Рекурсия](./Week02-Recursion/) - 13.10.2026
+3. [Процедури от по-висок ред](./Week03-HigherOrderFunctions/) - 20.10.2026
