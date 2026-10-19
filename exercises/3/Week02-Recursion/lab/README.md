@@ -174,26 +174,26 @@
 
 Разпишете всички начини за `6` и всички начини за `5` и ги сравнете.
 
-Начините за `6`, в които участва поне една единица, са точно 7. Ако махнем по една единица (оградената) от всеки от тях, получаваме всички начини за `5`:
+Начините за `6`, в които участва поне една единица, са точно 7. Ако махнем по една единица от всеки от тях, получаваме всички начини за `5`:
 
-| Начини за `6` | | Начини за `5` |
+| Начини за `6` | махаме една ${\color{#E5534B}\mathbf{1}}$ | Начини за `5` |
 |---|---|---|
-| ${\color{#B083F0}\mathbf{5}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | → | ${\color{#B083F0}\mathbf{5}}$ |
-| ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | → | ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}}$ |
-| ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | → | ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}}$ |
-| ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | → | ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |
-| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | → | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}}$ |
-| ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | → | ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |
-| ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | → | ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |
+| ${\color{#B083F0}\mathbf{5}} + {\color{#E5534B}\mathbf{1}}$ | → | ${\color{#B083F0}\mathbf{5}}$ |
+| ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | → | ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}}$ |
+| ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}}$ | → | ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}}$ |
+| ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | → | ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |
+| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | → | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}}$ |
+| ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | → | ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |
+| ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | → | ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |
 
 Остават начините за `6` без нито една единица: ${\color{#E275AD}\mathbf{6}}$, ${\color{#E0823D}\mathbf{4}} + {\color{#539BF5}\mathbf{2}}$, ${\color{#57AB5A}\mathbf{3}} + {\color{#57AB5A}\mathbf{3}}$, ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$. Общо `7 + 4 = 11`.
 
 Как да преброим тези 4 начина? По същия начин, но вече с двойката. Начините за `6` без единици, в които участва поне една двойка, са 2. Ако махнем по една двойка от всеки от тях, получаваме всички начини за `4` без единици:
 
-| Начини за `6` без единици | | Начини за `4` без единици |
+| Начини за `6` без единици | махаме една ${\color{#539BF5}\mathbf{2}}$ | Начини за `4` без единици |
 |---|---|---|
-| ${\color{#E0823D}\mathbf{4}} + \boxed{{\color{#539BF5}\mathbf{2}}}$ | → | ${\color{#E0823D}\mathbf{4}}$ |
-| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + \boxed{{\color{#539BF5}\mathbf{2}}}$ | → | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ |
+| ${\color{#E0823D}\mathbf{4}} + {\color{#539BF5}\mathbf{2}}$ | → | ${\color{#E0823D}\mathbf{4}}$ |
+| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ | → | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ |
 
 Остават начините за `6` без единици и без двойки: ${\color{#E275AD}\mathbf{6}}$, ${\color{#57AB5A}\mathbf{3}} + {\color{#57AB5A}\mathbf{3}}$. Тях можем да преброим по същия начин, но вече с тройката, и т.н.
 
@@ -216,7 +216,7 @@
 
 Отговорът на задачата е $p(n, 1)$ — всяко събираемо е поне `1`, т.е. нямаме никакво ограничение.
 
-В примерите по-долу всяко събираемо има свой цвят: ${\color{#E5534B}\mathbf{1}}$, ${\color{#539BF5}\mathbf{2}}$, ${\color{#57AB5A}\mathbf{3}}$, ${\color{#E0823D}\mathbf{4}}$, ${\color{#B083F0}\mathbf{5}}$, ${\color{#E275AD}\mathbf{6}}$. Събираемото, което махаме, е оградено.
+В примерите по-долу всяко събираемо има свой цвят: ${\color{#E5534B}\mathbf{1}}$, ${\color{#539BF5}\mathbf{2}}$, ${\color{#57AB5A}\mathbf{3}}$, ${\color{#E0823D}\mathbf{4}}$, ${\color{#B083F0}\mathbf{5}}$, ${\color{#E275AD}\mathbf{6}}$.
 
 #### Формулата
 
@@ -246,13 +246,13 @@ $$p(6, {\color{#E5534B}\mathbf{1}}) = p(5, {\color{#E5534B}\mathbf{1}}) + p(6, {
 
 | ✂️ С поне едно ${\color{#E5534B}\mathbf{1}}$ | → махаме едно ${\color{#E5534B}\mathbf{1}}$ | 🚫 Без ${\color{#E5534B}\mathbf{1}}$ |
 |---|---|---|
-| ${\color{#B083F0}\mathbf{5}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | ${\color{#B083F0}\mathbf{5}}$ | ${\color{#E275AD}\mathbf{6}}$ |
-| ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#E0823D}\mathbf{4}} + {\color{#539BF5}\mathbf{2}}$ |
-| ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#57AB5A}\mathbf{3}}$ |
-| ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ |
-| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}}$ |  |
-| ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |  |
-| ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + \boxed{{\color{#E5534B}\mathbf{1}}}$ | ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |  |
+| ${\color{#B083F0}\mathbf{5}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#B083F0}\mathbf{5}}$ | ${\color{#E275AD}\mathbf{6}}$ |
+| ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#E0823D}\mathbf{4}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#E0823D}\mathbf{4}} + {\color{#539BF5}\mathbf{2}}$ |
+| ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#539BF5}\mathbf{2}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#57AB5A}\mathbf{3}}$ |
+| ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ |
+| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}}$ |  |
+| ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |  |
+| ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ | ${\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}} + {\color{#E5534B}\mathbf{1}}$ |  |
 | | **$p(5, {\color{#E5534B}\mathbf{1}}) = 7$** | **$p(6, {\color{#539BF5}\mathbf{2}}) = 4$** |
 
 Средната колона е точно всички начини за `5` — затова групата е $p(5, {\color{#E5534B}\mathbf{1}})$. Продължаваме с дясната колона.
@@ -263,8 +263,8 @@ $$p(6, {\color{#539BF5}\mathbf{2}}) = p(4, {\color{#539BF5}\mathbf{2}}) + p(6, {
 
 | ✂️ С поне едно ${\color{#539BF5}\mathbf{2}}$ | → махаме едно ${\color{#539BF5}\mathbf{2}}$ | 🚫 Без ${\color{#539BF5}\mathbf{2}}$ |
 |---|---|---|
-| ${\color{#E0823D}\mathbf{4}} + \boxed{{\color{#539BF5}\mathbf{2}}}$ | ${\color{#E0823D}\mathbf{4}}$ | ${\color{#E275AD}\mathbf{6}}$ |
-| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + \boxed{{\color{#539BF5}\mathbf{2}}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#57AB5A}\mathbf{3}}$ |
+| ${\color{#E0823D}\mathbf{4}} + {\color{#539BF5}\mathbf{2}}$ | ${\color{#E0823D}\mathbf{4}}$ | ${\color{#E275AD}\mathbf{6}}$ |
+| ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ | ${\color{#539BF5}\mathbf{2}} + {\color{#539BF5}\mathbf{2}}$ | ${\color{#57AB5A}\mathbf{3}} + {\color{#57AB5A}\mathbf{3}}$ |
 | | **$p(4, {\color{#539BF5}\mathbf{2}}) = 2$** | **$p(6, {\color{#57AB5A}\mathbf{3}}) = 2$** |
 
 **Стъпка 3** — най-малкото допустимо събираемо е ${\color{#57AB5A}\mathbf{3}}$:
@@ -273,7 +273,7 @@ $$p(6, {\color{#57AB5A}\mathbf{3}}) = p(3, {\color{#57AB5A}\mathbf{3}}) + p(6, {
 
 | ✂️ С поне едно ${\color{#57AB5A}\mathbf{3}}$ | → махаме едно ${\color{#57AB5A}\mathbf{3}}$ | 🚫 Без ${\color{#57AB5A}\mathbf{3}}$ |
 |---|---|---|
-| ${\color{#57AB5A}\mathbf{3}} + \boxed{{\color{#57AB5A}\mathbf{3}}}$ | ${\color{#57AB5A}\mathbf{3}}$ | ${\color{#E275AD}\mathbf{6}}$ |
+| ${\color{#57AB5A}\mathbf{3}} + {\color{#57AB5A}\mathbf{3}}$ | ${\color{#57AB5A}\mathbf{3}}$ | ${\color{#E275AD}\mathbf{6}}$ |
 | | **$p(3, {\color{#57AB5A}\mathbf{3}}) = 1$** | **$p(6, {\color{#E0823D}\mathbf{4}}) = 1$** |
 
 **Стъпка 4** — най-малкото допустимо събираемо е ${\color{#E0823D}\mathbf{4}}$:
@@ -300,7 +300,7 @@ $$p(6, {\color{#E275AD}\mathbf{6}}) = p(0, {\color{#E275AD}\mathbf{6}}) + p(6, 7
 
 | ✂️ С поне едно ${\color{#E275AD}\mathbf{6}}$ | → махаме едно ${\color{#E275AD}\mathbf{6}}$ | 🚫 Без ${\color{#E275AD}\mathbf{6}}$ |
 |---|---|---|
-| $\boxed{{\color{#E275AD}\mathbf{6}}}$ | *(нищо не остава)* | — |
+| ${\color{#E275AD}\mathbf{6}}$ | *(нищо не остава)* | — |
 | | **$p(0, {\color{#E275AD}\mathbf{6}}) = 1$** | **$p(6, 7) = 0 \quad (7 > 6)$** |
 
 Махнахме и последното събираемо — стигнахме дъното $p(0, k) = 1$, т.е. намерихме един начин (самото ${\color{#E275AD}\mathbf{6}}$).
