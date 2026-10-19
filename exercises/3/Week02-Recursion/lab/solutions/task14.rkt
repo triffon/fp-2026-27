@@ -8,14 +8,15 @@
       )
   )
 
+; Добавя цифрата digit в края на result times пъти.
+(define (append-digit result digit times)
+  (if (zero? times)
+      result
+      (append-digit (+ (* result 10) digit) digit (sub1 times))
+      )
+  )
+
 (define (sort-n n)
-  ; Добавя цифрата digit в края на result times пъти.
-  (define (append-digit result digit times)
-    (if (zero? times)
-        result
-        (append-digit (+ (* result 10) digit) digit (sub1 times))
-        )
-    )
   ; Обхождаме цифрите от 9 до 0 и всяка я добавяме толкова пъти,
   ; колкото пъти се среща в n. Така резултатът е подреден в намаляващ ред
   ; и нулите не се губят (напр. 201 -> 210, а не 21).
