@@ -92,7 +92,12 @@
 ; по ваш избор.
 
 ; Пример: (my-sort '(3 1 4 1 5 9)) ~> '(1 1 3 4 5 9)
-(define (my-sort lst) 'undefined)
+(define (my-sort lst)
+  (if (null? lst)
+      lst
+      (append (my-sort (filter (λ (x) (<= x (car lst))) (cdr lst)))
+              (list (car lst))
+              (my-sort (filter (λ (x) (> x (car lst))) (cdr lst))))))
 
 ; Бонус: Да се дефинира сортираща функция, която приема двуместен предикат,
 ; който определя дали първият елемент е по-малък от втория.
@@ -113,3 +118,18 @@
 
 ; Пример: (group-by = '(1 1 2 3 3 3 2)) ~> '((1 1) (2) (3 3 3) (2))
 (define (group-by pred lst) 'undefined)
+
+; 15. Да се дефинират функциите insert, remove и lookup за
+; асоциативни списъци.
+(define (insert key value assoc-list) 'undefined)
+(define (remove key assoc-list) 'undefined)
+(define (lookup key assoc-list) 'undefined)
+
+; 16. Да се дефинира функция, която връща асоциативен списък
+; с ключове елементите на списък и стойности броя срещания
+; на всеки елемент.
+(define (hist lst) 'undefined)
+
+; 17. Да се дефинира функция, която слива два асоциативни списъка.
+(define (merge lhs rhs) 'undefined)
+
