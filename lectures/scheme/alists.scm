@@ -39,5 +39,17 @@
 (define (exists? p? l)
   (pair? (filter p? l)))
 
+(define (exists? p? l)
+  (if (null? l) #f
+      (if (p? (car l)) #t
+          (exists? p? (cdr l)))))
+
+(define (search p l)
+  (and (not (null? l)) (or (p (car l)) (search p (cdr l)))))
+
+(define (assoc key al)
+  (search (lambda (kv) (and (equal? (car kv) key) kv)) al))
+
+
 (define (forall? p? l)
   (not (exists? (lambda (x) (not (p? x))) l)))
