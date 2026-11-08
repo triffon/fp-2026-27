@@ -1,84 +1,84 @@
-# How to install Haskell
+# Как да инсталираме Haskell
 
-## Step 0 ❗
+## Стъпка 0 ❗
 
-❗❗❗ If you have a **third-party** antivirus (i.e. different from Windows Defender), please **turn it off** until you complete this procedure. ❗❗❗
+❗❗❗ Ако използвате антивирусна програма **от трета страна** (т.е. различна от Windows Defender), моля, **изключете я**, докато не завършите инсталацията. ❗❗❗
 
-## Steps 1 and 2
+## Стъпки 1 и 2
 
-Navigate to [the official Haskell website](https://www.haskell.org/) and click on `Downloads`:
+Отворете [официалния сайт на Haskell](https://www.haskell.org/) и натиснете `Downloads`:
 
-![steps 1 and 2](./assets/steps1_2.png)
+![стъпки 1 и 2](./assets/steps1_2.png)
 
-## Step 3
+## Стъпка 3
 
-Click on the `GHCup` link:
+Натиснете връзката `GHCup`:
 
-![step 3](./assets/step3.png)
+![стъпка 3](./assets/step3.png)
 
-## Step 4
+## Стъпка 4
 
-Copy the command which will install the utility with which Haskell can be set up:
+Копирайте командата, която инсталира инструмента, с който се настройва Haskell:
 
-![step 4](./assets/step4.png)
+![стъпка 4](./assets/step4.png)
 
-## Step 5
+## Стъпка 5
 
-Open PowerShell and paste the command using `Ctrl + V`:
+Отворете PowerShell и поставете командата с `Ctrl + V`:
 
-![step 5](./assets/step5.png)
+![стъпка 5](./assets/step5.png)
 
-![step 5 - pasted command](./assets/step6.png)
+![стъпка 5 - поставена команда](./assets/step6.png)
 
-## Step 6
+## Стъпка 6
 
-Accept the default answers for installing the Haskell toolchain:
+Приемете отговорите по подразбиране при инсталирането на инструментите за Haskell:
 
-![step 6 - prompt 1](./assets/step7.png)
+![стъпка 6 - въпрос 1](./assets/step7.png)
 
-![step 6 - prompt 2](./assets/step8.png)
+![стъпка 6 - въпрос 2](./assets/step8.png)
 
-![step 6 - prompt 3](./assets/step9.png)
+![стъпка 6 - въпрос 3](./assets/step9.png)
 
-![step 6 - prompt 4](./assets/step10.png)
+![стъпка 6 - въпрос 4](./assets/step10.png)
 
-![step 6 - prompt 5](./assets/step11.png)
+![стъпка 6 - въпрос 5](./assets/step11.png)
 
-This will start the installation procedure. It is going to take some time. Do not close the window until it has finished.
+Това ще започне инсталацията. Тя отнема известно време - не затваряйте прозореца, докато не приключи.
 
-If you get an error the first time you run the command, then paste and run it again. This time you should get a prompt asking you whether you want to reinstall cabal. You should reinstall it, by entering `R` when the prompt appears. If the installation fails again, drop me an email.
+Ако при първото изпълнение на командата получите грешка, поставете я и я изпълнете отново. Този път трябва да се появи въпрос дали искате да преинсталирате cabal - преинсталирайте го, като въведете `R`. Ако инсталацията пак е неуспешна, пишете ми имейл.
 
-## Step 7
+## Стъпка 7
 
-After around 2-5 mins (depending on the speed of your Internet connection) you should see another window open:
+След около 2-5 минути (в зависимост от скоростта на интернет връзката ви) трябва да се отвори още един прозорец:
 
-![step 7 - second window](./assets/step12.png)
+![стъпка 7 - втори прозорец](./assets/step12.png)
 
-This is also part of the installation and you must also wait for it to finish. It is going to take around 10-20 mins (depending on the speed of your Internet connection).
+Това също е част от инсталацията и трябва да изчакате и тя да приключи. Ще отнеме около 10-20 минути (в зависимост от скоростта на интернет връзката ви).
 
-If the installation was successful, you should see the following text:
+Ако инсталацията е успешна, ще видите следния текст:
 
-![step 7 - success](./assets/step13.png)
+![стъпка 7 - успешна инсталация](./assets/step13.png)
 
-You can press `Enter` and close all opened windows.
+Можете да натиснете `Enter` и да затворите всички отворени прозорци.
 
-## Step 8
+## Стъпка 8
 
-Let's test to see if it works. Go to [the official Visual Studio Code website](https://code.visualstudio.com/) and download the editor (if you don't have it already).
+Нека проверим дали всичко работи. Отворете [официалния сайт на Visual Studio Code](https://code.visualstudio.com/) и изтеглете редактора (ако още не го имате).
 
-After installation open it and install the following extensions:
+След като го инсталирате, отворете го и инсталирайте следните разширения:
 - Code Runner
 - Haskell Syntax Highlighting
 
-![step15](./assets/step15.png)
+![стъпка 8 - Code Runner](./assets/step15.png)
 
-![step16](./assets/step16.png)
+![стъпка 8 - инсталиране на Code Runner](./assets/step16.png)
 
-Do the same for *Haskell Syntax Highlighting*:
+Направете същото и за *Haskell Syntax Highlighting*:
 
-![step17](./assets/step17.png)
+![стъпка 8 - Haskell Syntax Highlighting](./assets/step17.png)
 
-Now create a new file and save it as *test.hs*. In it paste the following code:
+Сега създайте нов файл и го запазете като *test.hs*. Поставете в него следния код:
 
 ```haskell
 main :: IO()
@@ -86,10 +86,10 @@ main = do
     print "Hello, world"
 ```
 
-**Save the file** and click on the *Play* button in the top right corner. Your program should output "Hello, world"!
+**Запазете файла** и натиснете бутона *Play* в горния десен ъгъл. Програмата трябва да изведе "Hello, world"!
 
-![step18](./assets/step18.png)
+![стъпка 8 - изпълнение](./assets/step18.png)
 
-Congratulations! You have successfully prepared your machine for programming in Haskell 🥳 !
+Поздравления! Успешно подготвихте компютъра си за програмиране на Haskell 🥳 !
 
-**Credit: Simeon Hristov**
+**Автор на ръководството: Симеон Христов**
