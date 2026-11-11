@@ -35,6 +35,19 @@
 (define (all? p? l)
   (not (search (lambda (x) (not (p? x))) l)))
 
+;; функции за дървета
+(define empty-tree '())
+(define (leaf x) (list x empty-tree empty-tree))
+(define make-tree list)
+
+(define empty-tree? null?)
+(define root-tree car)
+(define left-tree cadr)
+(define right-tree caddr)
+
+(define (tree? x)
+  (or (null? x) (and (list? x) (= (length x) 3) (tree? (cadr x)) (tree? (caddr x)))))
+
 ;; функции за потоци
 (define the-empty-stream '())
 
