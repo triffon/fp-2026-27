@@ -11,7 +11,7 @@
 | 5 | 03.11.2026 | 16:00 - 18:00 | 306 | [Асоциативни списъци, двоични дървета, мутиращи операции и потоци](./Week05-AssociationListsBinaryTreesMutationStreams/) |
 | 6 | 10.11.2026 | 16:00 - 18:00 | 306 | Малко контролно 1 ([решения](./ExamSolutions/SmallControl1/)) |
 | 7 | 17.11.2026 | 16:00 - 18:00 | 306 | [Въведение в Haskell](./Week06-HelloHaskell/) ([инсталация](./Week06-HelloHaskell/installationGuide/)) |
-| 8 | 24.11.2026 | 16:00 - 18:00 | 306 | |
+| 8 | 24.11.2026 | 16:00 - 18:00 | 306 | [Списъци, кортежи, partial application, pattern matching и потоци](./Week07-ListsTuplesPartialApplicationStreams/) |
 | 9 | 01.12.2026 | 16:00 - 18:00 | 306 | |
 | | ~~08.12.2026~~ | | | *Студентски празник* |
 | 10 | 15.12.2026 | 16:00 - 18:00 | 306 | |
